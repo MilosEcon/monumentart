@@ -234,8 +234,7 @@ ScrollTrigger.matchMedia({
               trigger: '.main',
               start: 'bottom bottom',
               end: 'bottom bottom-=250',
-              scrub: 0.3,
-              markers: true
+              scrub: 0.3
           }, 
       });
   });
