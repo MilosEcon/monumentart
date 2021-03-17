@@ -1,0 +1,18 @@
+.contacts {
+  
+  li {
+    margin-bottom: 0.4rem;
+  }
+
+  &__address {
+    font-size: 0.8rem;
+  }
+  &__phone {
+    font-size: 1rem;
+    font-weight: weight(medium);
+  }
+  &__mail {
+    font-size: 0.8rem;
+    font-weight: weight(medium);
+  }
+}

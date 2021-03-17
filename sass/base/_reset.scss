@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  outline: medium none !important;
+  border: none;
+}

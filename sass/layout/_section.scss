@@ -1,0 +1,67 @@
+.section {
+  background-color: $mainBgColor;
+  position: relative;
+  .container {
+    padding: 0 50px 20vh 22%;
+    
+    @include media("<media-md") {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @include media("<media-s") {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 40px;
+
+    &--rendering-3d {
+      color: $introColor;
+    }
+
+    &--print-design {
+      color: $printDesignColor;
+    }
+    
+    &--logo {
+      color: $logoColor;
+    }
+    
+    &--app-ar {
+      color: $appArColor;
+    }
+  }
+
+  .paragraf-wrapper {
+    width: 30%;
+
+    @include media("<media-xxl") {
+      width: 40%;
+    }
+
+    @include media("<media-lg") {
+      width: 55%;
+    }
+
+    @include media("<media-md") {
+      width: 75%;
+    }
+
+    @include media("<media-s") {
+      width: 100%;
+    }
+
+    p {
+      margin: 20px 0;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    p:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+}

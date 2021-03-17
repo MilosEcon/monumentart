@@ -1,0 +1,22 @@
+body {
+  font-family: $main-font;
+  text-rendering: optimizeLegibility;
+  color: $main-text-color;
+
+  &.menu-closed {
+    .header__hamburger--big:hover {
+      .header__bars .middle {
+        width: 28px !important;
+      }
+
+      .header__letters {
+        span:nth-child(odd) {
+          transform: translateY(-3px);
+        }
+        span:nth-child(even) {
+          transform: translateY(+3px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.brief {
+  position: relative;
+ display: inline-block;
+  &__me {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: weight(medium);
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 27px;
+    left: -70%;
+    width: 42px;
+    animation: arrow 10s ease 5s infinite;
+
+    @include media('<media-md') {
+      display: none;
+    }
+  }
+}
+
+@keyframes arrow {
+  8%  {left: -30%}
+  10%  {left: -35%}
+  12%  {left: -30%}
+  20%  {left: -70%}
+}

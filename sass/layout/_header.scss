@@ -1,0 +1,128 @@
+.header {
+  &__logo {
+    position: fixed;
+    left: 55px;
+    top: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transform-origin: left center 0px;
+    z-index: 10;
+
+    @include media("<media-lg") {
+      left: 40px;
+      top: 10px;
+      font-size: 1.1rem;
+    }
+    @include media("<media-md") {
+      display: none;
+    }
+  }
+
+  &__hamburger-big-wrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(12px);
+    z-index: 10;
+
+    @include media("<media-lg") {
+      transform: translateX(0) !important;
+    }
+
+    @include media("<media-md") {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &--big {
+      justify-content: flex-end;
+    }
+
+    &--small {
+      position: fixed;
+      right: 25px;
+      top: 25px;
+      background-color: $bordersBgColor;
+      border-radius: 50%;
+      display: none;
+
+      @include media("<media-md") {
+        display: flex;
+      }
+    }
+  }
+
+  &__bars {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    & div {
+      height: 1.99px;
+      background-color: black;
+      transition: all 0.3s;
+      width: 20px;
+
+      &.top {
+        margin-bottom: 3px;
+        width: 80%;
+      }
+
+      &.bottom {
+        margin-top: 3px;
+        width: 65%;
+      }
+    }
+  }
+
+  &__letters {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    margin-left: 12px;
+    color: black;
+
+    span {
+      display: inline-block;
+      transition: all 0.5s ease;
+      font-size: 12px;
+      letter-spacing: 5px;
+      font-weight: weight(medium);
+      transform: scale(1.1);
+    }
+  }
+
+  &__social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $main-text-color;
+    z-index: 5;
+
+    @include media("<media-lg") {
+      width: 40px;
+    }
+
+    @include media("<media-md") {
+      display: none;
+    }
+
+    div:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

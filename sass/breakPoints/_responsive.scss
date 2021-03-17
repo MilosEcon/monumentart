@@ -1,0 +1,20 @@
+@include media-xl {
+  .menu-container {
+    &__left {
+      width: 40%;
+    
+      .nav {
+        font-size: 1.8rem !important;
+      }
+    }
+
+    &__right {
+      width: 45%;
+
+      .bulb {
+        width: 150px;
+      }
+    }
+  }
+
+}

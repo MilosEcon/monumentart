@@ -1,0 +1,31 @@
+.secondary-font {
+  font-family: $secondary-font;
+}
+
+.big-font {
+  font-size: 5rem;
+  font-weight: weight("bold");
+  line-height: 0.9;
+
+  @include media('<media-xxl') {
+    font-size: 4rem;
+  }
+  
+  @include media('<media-xl') {
+    font-size: 3.5rem;
+  }
+}
+
+.big-bold {
+  font-size: 2rem;
+  font-weight: weight("bold");
+  margin-bottom: 40px;
+
+  @include media('<media-xxl') {
+    font-size: 1.8rem;
+  }
+  
+  @include media('<media-xl') {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,28 @@
+.wave-container {
+  width: 100px;
+  margin-bottom: 30px;
+
+  &--rendering-3d {
+    path {
+      fill: $introColor;
+    }
+  }
+  
+  &--print-design {
+    path {
+      fill: $printDesignColor;
+    }
+  }
+  
+  &--logo {
+    path {
+      fill: $logoColor;
+    }
+  }
+  
+  &--app-ar {
+    path {
+      fill: $appArColor;
+    }
+  }
+}

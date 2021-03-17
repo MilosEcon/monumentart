@@ -1,0 +1,36 @@
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $introColor;
+  pointer-events: none;
+  z-index: 3;
+
+  &__text {
+    color: $loader-text-color;
+    font-weight: weight(bold);
+    font-size: 4rem;
+    position: relative;
+
+
+    @include media("<media-lg") {
+      font-size: 3rem;
+    }
+    
+    @include media("<media-s") {
+      font-size: 2.5rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: $introColor;
+    }
+  }
+}

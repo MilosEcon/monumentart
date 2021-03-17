@@ -1,0 +1,64 @@
+.borders {
+  > div {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    pointer-events: none;
+    z-index: 3;
+    background-color: $bordersBgColor;
+
+    @include media('<media-lg') {
+      width: 40px;
+      height: 40px;
+    }
+    
+    @include media('<media-md') {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__top {
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+
+    @include media('<media-md') {
+      top: -20px;
+    }
+  }
+
+  &__bottom {
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom;
+
+    @include media('<media-md') {
+      bottom: -20px;
+    }
+  }
+
+  &__left {
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+
+    @include media('<media-md') {
+      left: -20px;
+    }
+  }
+
+  &__right {
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    transform-origin: right;
+
+    @include media('<media-md') {
+      right: -20px;
+    }
+  }
+}

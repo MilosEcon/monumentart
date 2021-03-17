@@ -1,0 +1,25 @@
+**** z-index ****
+
+.header__logo: 10;
+
+.header__hamburger: 10;
+
+
+.menu-container: 9;
+
+.menu-container__left .wrapper .nav li a::before: 1; cover za text u nav-u
+
+
+.menu-container__left .wrapper .nav li a::after: -1; iza text u nav-u
+
+.borders: 4;
+
+.loader: 3;
+
+.intro letters: 2;
+
+.logo__heading : 2;
+
+.scroll-sign : 3;
+
+.social : 5;

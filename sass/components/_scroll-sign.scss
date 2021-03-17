@@ -1,0 +1,20 @@
+@include animation-mixin(bounce, 0, -15px);
+
+.scroll {
+  position: fixed;
+  transform: rotate(-90deg);
+  right: 51%;
+  bottom: 105px;
+  color: $mainBgColor;
+  font-size: 0.7rem;
+  z-index: 3;
+
+  &__arrow {
+    position: absolute;
+    right: 130%;
+    width: 50%;
+    transform: translateY(50%);
+    fill: $mainBgColor;
+    animation: bounce 800ms cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+  }
+}

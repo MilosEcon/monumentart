@@ -1,0 +1,13 @@
+.building-img {
+  width: 100%;
+  height: 100vh;
+  
+  .image-container {
+    width: 100%;
+    height: 100%;
+    & div {
+      background-position: 50% -50%;
+      background-image: url("../../images/building1.jpg")
+    }
+  }
+}

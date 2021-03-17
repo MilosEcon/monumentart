@@ -1,0 +1,51 @@
+.print-design {
+  padding-bottom: 20vh;
+  .container {
+    padding-bottom: 100px;
+    @include media("<media-md") {
+      padding-bottom: 50px;
+    }
+  }
+  .paragraf-wrapper {
+    width: 50%;
+
+    @include media("<media-lg") {
+      width: 70%;
+    }
+
+    @include media("<media-md") {
+      width: 75%;
+    }
+
+    @include media("<media-s") {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: 55%;
+    transform: translateY(150px);
+
+    @include media("<media-md") {
+      position: relative;
+      left: 0;
+      transform: translateY(0) !important;
+    }
+  }
+
+  .image-container {
+    width: 50%;
+    height: 300px;
+
+    @include media("<media-md") { 
+      width: 100%;
+    }
+  
+    & div {
+      background-position: 50% 0%;
+      background-image: url("../../images/print.jpg");
+    }
+  }
+  
+}

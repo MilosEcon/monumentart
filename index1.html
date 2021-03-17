@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>paralelni sajt</title>
+
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/905b44a785.js" crossorigin="anonymous"></script>
+    <script src="lib/bodyScrollLock.js"></script>
+  </head>
+  <body class="menu-closed">
+      
+    <div class="scroll">
+          <span>Scroll</span>
+          <svg
+            class="scroll__arrow"
+            x="0px"
+            y="0px"
+            viewBox="0 0 51.6 25"
+            style="enable-background:new 0 0 51.6 25;"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M49.6,10.5H6.9l7.1-7c0.8-0.8,0.8-2.1,0-2.9c-0.8-0.8-2.1-0.8-2.9,0L0.6,11.1c0,0,0,0,0,0c-0.8,0.8-0.8,2.1,0,2.9
+                c0,0,0,0,0,0l10.5,10.5c0.8,0.8,2.1,0.8,2.9,0c0.8-0.8,0.8-2.1,0-2.9l-7.1-7h42.7c1.1,0,2-0.9,2-2C51.6,11.4,50.7,10.5,49.6,10.5z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+    <header class="header">
+      <div class="header__logo">Monumentart</div>
+
+      <div class="header__hamburger-big-wrapper">
+        <a class="header__hamburger header__hamburger--big" href="#">
+          <div class="header__bars">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+          </div>
+
+          <span class="header__letters">
+            <span>M</span><span>E</span><span>N</span><span>U</span>
+          </span>
+        </a>
+      </div>
+
+      <a class="header__hamburger header__hamburger--small" href="#">
+        <div class="header__bars">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </div>
+      </a>
+
+      <div class="header__social">
+          <div>
+              <a href=""><i class='fab fa-facebook-f'></i></a></div>
+          <div>
+              <a href=""><i class='fab fa-instagram'></i></a>
+          </div>
+          <div>
+              <a href=""><i class='fab fa-twitter'></i></a>
+          </div>
+      </div>
+    </header>
+
+    <div class="loader">
+      <span class="loader__text">Monumentart</span>
+    </div>
+
+    <div class="menu-container">
+      <div class="menu-container__left">
+        <div class="wrapper">
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="3d-rendering.html" data-bulb="one" class="nav__render">
+                  3D Rendering.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="print-design.html"
+                  data-bulb="two"
+                  class="nav__print-desing"
+                >
+                  Print Design.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="logo-design.html"
+                  data-bulb="three"
+                  class="nav__logo-desing"
+                >
+                  Logo Design.
+                </a>
+              </li>
+              <li>
+                <a href="ar-app.html" data-bulb="four" class="nav__ar-app">
+                  AR/App.
+                </a>
+              </li>
+              <li>
+                <a href="about.html" data-bulb="five" class="nav__about">
+                  About.
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__address">3722 Skien</li>
+            <li class="contacts__phone">+47 984 65 405</li>
+            <li class="contacts__mail">milos.josifovic@monumentart.com</li>
+          </ul>
+          <div class="menu-container__social">
+              <div>
+                  <a href=""><i class='fab fa-facebook-f'></i></a></div>
+              <div>
+                  <a href=""><i class='fab fa-instagram'></i></a>
+              </div>
+              <div>
+                  <a href=""><i class='fab fa-twitter'></i></a>
+              </div>
+          </div>
+        </div>
+        <div class="brief">
+          <a href="#">
+            <div class="secondary-font">Want to work with me?</div>
+            <div class="brief__me">BRIEF ME</div>
+            <div class="brief__arrow">
+              <i
+                ><svg
+                  enable-background="new 0 0 32 32"
+                  version="1.1"
+                  viewBox="0 0 32 32"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z"
+                    fill="#121313"
+                    fill-rule="evenodd"
+                  />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g /></svg></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="menu-container__right">
+        <svg
+          class="bulb one"
+          data-speed="5"
+          viewBox="26 20 150 150"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <a href="3d-rendering.html">
+            <path
+              d="M37.1,-55C46.1,-44.5,50.2,-31.1,57,-16.9C63.7,-2.8,73.2,12,71.1,24.6C69.1,37.2,55.6,47.5,41.8,54.2C28,60.9,14,63.9,-1.2,65.5C-16.4,67.1,-32.7,67.3,-46.2,60.6C-59.7,53.8,-70.4,40.1,-69.9,26.3C-69.4,12.6,-57.7,-1.2,-51.9,-16.2C-46.1,-31.1,-46.1,-47.3,-38.4,-58.2C-30.7,-69.1,-15.4,-74.8,-0.7,-73.9C14,-72.9,28,-65.4,37.1,-55Z"
+              transform="translate(100 100)"
+            />
+          </a>
+        </svg>
+        <svg
+          class="bulb two"
+          data-speed="9"
+          viewBox="20 35 140 150"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <a href="print-design.html">
+            <path
+              d="M28.6,-37.6C34.8,-28.9,36.1,-17.7,42.3,-4.3C48.4,9.2,59.5,24.9,57.3,37.3C55.2,49.7,39.9,58.7,22.6,67.1C5.4,75.5,-13.9,83.3,-30.8,79.4C-47.7,75.5,-62.3,60,-68,42.8C-73.6,25.7,-70.2,6.9,-66.1,-10.9C-62.1,-28.7,-57.3,-45.6,-46.1,-53.4C-35,-61.3,-17.5,-60,-3.1,-56.3C11.2,-52.5,22.4,-46.3,28.6,-37.6Z"
+              transform="translate(100 100)"
+            />
+          </a>
+        </svg>
+        <svg
+          class="bulb three"
+          data-speed="-3"
+          viewBox="28 25 155 140"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <a href="logo-design.html">
+            <path
+              d="M41,-51.4C52,-48.5,58.9,-34.9,66.1,-19.8C73.4,-4.7,80.9,12,78.7,27.6C76.4,43.1,64.3,57.5,49.6,60.1C34.8,62.7,17.4,53.5,2.5,50.1C-12.4,46.6,-24.8,49,-34.6,44.8C-44.3,40.5,-51.4,29.8,-57.8,17.1C-64.2,4.5,-70,-10.1,-69,-25.3C-68,-40.5,-60.3,-56.5,-47.7,-58.9C-35.1,-61.2,-17.5,-50.1,-1.2,-48.4C15,-46.7,30.1,-54.4,41,-51.4Z"
+              transform="translate(100 100)"
+            />
+          </a>
+        </svg>
+        <svg
+          class="bulb four"
+          data-speed="-6"
+          viewBox="35 35 150 130"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <a href="ar-app.html">
+            <path
+              d="M38,-48.2C52.6,-41.6,70.2,-35.1,77.6,-22.8C84.9,-10.5,82,7.6,74.6,22.3C67.1,37,55.2,48.3,42.1,53.7C28.9,59.2,14.4,58.7,3.3,54.2C-7.9,49.6,-15.7,41,-27.2,35.1C-38.7,29.1,-53.8,25.8,-58.1,17.7C-62.4,9.6,-55.9,-3.2,-50.7,-15.6C-45.5,-28.1,-41.7,-40.1,-33.5,-48.8C-25.3,-57.5,-12.6,-62.9,-0.5,-62.2C11.7,-61.5,23.3,-54.8,38,-48.2Z"
+              transform="translate(100 100)"
+            />
+          </a>
+        </svg>
+        <svg
+          class="bulb five"
+          data-speed="4"
+          viewBox="20 35 160 140"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <a href="about.html">
+            <path
+              d="M39.8,-50.5C54.7,-43.9,72,-36.5,76.5,-24.4C81,-12.4,72.6,4.3,64.1,17.8C55.5,31.3,46.7,41.8,36,48.8C25.3,55.8,12.6,59.4,-1,60.8C-14.6,62.1,-29.2,61.2,-44.9,55.8C-60.6,50.4,-77.3,40.5,-78.7,27.6C-80.2,14.7,-66.4,-1.2,-54.8,-11.9C-43.2,-22.7,-33.9,-28.3,-25.2,-36.8C-16.4,-45.4,-8.2,-56.9,2.1,-59.8C12.4,-62.7,24.9,-57,39.8,-50.5Z"
+              transform="translate(100 100)"
+            />
+          </a>
+        </svg>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="intro">
+        <div class="intro__logo">Monumentart</div>
+        <div class="intro__padding">
+          <div class="wrapper">
+            <span class="wave">
+              <svg
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 16.9"
+                style="enable-background:new 0 0 100 16.9;"
+                xml:space="preserve"
+              >
+                <path
+                  d="M50,15c-0.2,0-0.3-0.1-0.5-0.2L34.4,3.2L19.3,14.8c-0.3,0.2-0.6,0.2-0.9,0L2.8,2.8C2.4,2.6,2.4,2.1,2.6,1.8
+                    c0.3-0.3,0.7-0.4,1.1-0.1l0,0l15.1,11.6L33.9,1.6c0.3-0.2,0.6-0.2,0.9,0L50,13.3L65.1,1.6c0.3-0.2,0.6-0.2,0.9,0l15.1,11.6L96.3,1.6
+                    c0.3-0.3,0.8-0.2,1.1,0.1c0.3,0.3,0.2,0.8-0.1,1.1c0,0,0,0,0,0l-15.6,12c-0.3,0.2-0.6,0.2-0.9,0L65.6,3.2L50.5,14.8
+                    C50.3,14.9,50.2,15,50,15z"
+                />
+              </svg> </span
+            ><span class="since secondary-font"><em>since 2012.</em></span>
+          </div>
+          <div class="mission-text">
+            <div><div>Monumentart is an independent digital agency,</div></div>
+            <div>
+              <div>providing inovative, modern and astetic solutions.</div>
+            </div>
+            <div><div>In that proces we treat every customer</div></div>
+            <div><div>with attention, consideration and respect.</div></div>
+          </div>
+        </div>
+
+        <!-- Hello Letters -->
+        <div class="intro__container">
+          <div class="intro__letters">
+            <div class="hello-first">
+              <div class="hello-first__h">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="hello-first__e">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div class="hello-second">
+              <div class="hello-second__l">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="hello-second__l two">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="hello-second__o">
+                <svg width="100%" height="100%">
+                  <circle r="36%" cx="50%" cy="50%"></circle>
+                </svg>
+              </div>
+              <div class="hello-second__dot">
+                <svg width="100%" height="100%">
+                  <circle r="45%" cx="50%" cy="50%"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro__page-color"></div>
+      </div>
+
+      <section class="building-img section ">
+        <div class="image-container">
+          <div></div>
+        </div>
+      </section>
+
+      <section class="rendering-3d section">
+        <div class="container">
+          <div class="wave-container wave-container--rendering-3d">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 16.9"
+              style="enable-background:new 0 0 100 16.9;"
+              xml:space="preserve"
+            >
+              <path
+                d="M50,15c-0.2,0-0.3-0.1-0.5-0.2L34.4,3.2L19.3,14.8c-0.3,0.2-0.6,0.2-0.9,0L2.8,2.8C2.4,2.6,2.4,2.1,2.6,1.8
+                            c0.3-0.3,0.7-0.4,1.1-0.1l0,0l15.1,11.6L33.9,1.6c0.3-0.2,0.6-0.2,0.9,0L50,13.3L65.1,1.6c0.3-0.2,0.6-0.2,0.9,0l15.1,11.6L96.3,1.6
+                            c0.3-0.3,0.8-0.2,1.1,0.1c0.3,0.3,0.2,0.8-0.1,1.1c0,0,0,0,0,0l-15.6,12c-0.3,0.2-0.6,0.2-0.9,0L65.6,3.2L50.5,14.8
+                            C50.3,14.9,50.2,15,50,15z"
+              />
+            </svg>
+          </div>
+
+          <h1 class="section__heading section__heading--rendering-3d">
+            <div class="big-font">3D <br />REND<br />ERING.</div>
+          </h1>
+
+          <div class="big-bold">
+            With <span class="secondary-font">3d rendering</span><br />all pices
+            fall in place
+          </div>
+          <div class="paragraf-wrapper">
+            <p>
+              Good architects and designers can readily visualize a design space
+              by using cad drawings and mood boards. However, the average person
+              might have a much harder time imagining a space from abstract
+              plans and designs. 3D rendering can be a great way to bridge this
+              gap.
+            </p>
+            <p>
+              3D rendering has reached a point where the images are difficult to
+              tell from a real photo. When it comes to 3D rendering, it can be
+              far easier to see how a project will develop in its various
+              stages.
+            </p>
+          </div>
+
+          <button class="secondary-font btn btn--rendering3d">
+            <a href="">Explore more</a>
+          </button>
+        </div>
+      </section>
+
+      <section class="print-design section">
+        <div class="container">
+          <div class="wave-container wave-container--print-design">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 16.9"
+              style="enable-background:new 0 0 100 16.9;"
+              xml:space="preserve"
+            >
+              <path
+                d="M50,15c-0.2,0-0.3-0.1-0.5-0.2L34.4,3.2L19.3,14.8c-0.3,0.2-0.6,0.2-0.9,0L2.8,2.8C2.4,2.6,2.4,2.1,2.6,1.8
+                        c0.3-0.3,0.7-0.4,1.1-0.1l0,0l15.1,11.6L33.9,1.6c0.3-0.2,0.6-0.2,0.9,0L50,13.3L65.1,1.6c0.3-0.2,0.6-0.2,0.9,0l15.1,11.6L96.3,1.6
+                        c0.3-0.3,0.8-0.2,1.1,0.1c0.3,0.3,0.2,0.8-0.1,1.1c0,0,0,0,0,0l-15.6,12c-0.3,0.2-0.6,0.2-0.9,0L65.6,3.2L50.5,14.8
+                        C50.3,14.9,50.2,15,50,15z"
+              />
+            </svg>
+          </div>
+          <h1 class="section__heading section__heading--print-design">
+            <div class="big-font">PRINT <br />DESIGN.</div>
+          </h1>
+
+          <div class="print-design__text">
+            <div class="big-bold">
+              Why is <span class="secondary-font">print design</span> <br />so
+              important?
+            </div>
+            <div class="paragraf-wrapper">
+              <p>
+                Having effective, well-designed print marketing materials will
+                contribute to the credibility of your business, and build brand
+                recognition.
+              </p>
+              <p>
+                Your branding creates a visual and emotional connection with
+                your customers, and good design can be the reason people do or
+                don't buy from you.
+              </p>
+            </div>
+            <button class="secondary-font btn btn--print-design">
+              <a href="">Explore more</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <div></div>
+        </div>
+      </section>
+
+      <section class="logo section">
+        <div class="container">
+          <div class="wave-container wave-container--logo">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 16.9"
+              style="enable-background:new 0 0 100 16.9;"
+              xml:space="preserve"
+            >
+              <path
+                d="M50,15c-0.2,0-0.3-0.1-0.5-0.2L34.4,3.2L19.3,14.8c-0.3,0.2-0.6,0.2-0.9,0L2.8,2.8C2.4,2.6,2.4,2.1,2.6,1.8
+                          c0.3-0.3,0.7-0.4,1.1-0.1l0,0l15.1,11.6L33.9,1.6c0.3-0.2,0.6-0.2,0.9,0L50,13.3L65.1,1.6c0.3-0.2,0.6-0.2,0.9,0l15.1,11.6L96.3,1.6
+                          c0.3-0.3,0.8-0.2,1.1,0.1c0.3,0.3,0.2,0.8-0.1,1.1c0,0,0,0,0,0l-15.6,12c-0.3,0.2-0.6,0.2-0.9,0L65.6,3.2L50.5,14.8
+                          C50.3,14.9,50.2,15,50,15z"
+              />
+            </svg>
+          </div>
+          <h1 class="section__heading section__heading--logo">
+            <div class="big-font">LO</div>
+            <div class="big-font">GO.</div>
+          </h1>
+        </div>
+        <div class="image-container">
+          <div></div>
+        </div>
+        <div class="logo__text">
+          <div class="big-bold">
+            Having a good <span class="secondary-font">logo</span> is not going
+            to build your bussiness but it can help it grow.
+          </div>
+          <div>
+            <p>
+              Logo grabs attention, makes a strong first impression, is the
+              foundation of your brand identity, is memorable, separates you
+              from competition, fosters brand loyalty, and is expected by your
+              audience.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              A logo is a combination of text and visual imagery that serves two
+              purposes. It tells people the name of the company and it creates a
+              visual symbol that represents your business. Some logos have
+              powerful symbolic association connected to people's memory.
+            </p>
+
+            <button class="secondary-font btn btn--logo">
+              <a href="">Explore more</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-ar section">
+        <div class="container">
+          <div class="app-ar__left">
+            <div class="wave-container wave-container--app-ar">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 16.9"
+                style="enable-background:new 0 0 100 16.9;"
+                xml:space="preserve"
+              >
+                <path
+                  d="M50,15c-0.2,0-0.3-0.1-0.5-0.2L34.4,3.2L19.3,14.8c-0.3,0.2-0.6,0.2-0.9,0L2.8,2.8C2.4,2.6,2.4,2.1,2.6,1.8
+                                  c0.3-0.3,0.7-0.4,1.1-0.1l0,0l15.1,11.6L33.9,1.6c0.3-0.2,0.6-0.2,0.9,0L50,13.3L65.1,1.6c0.3-0.2,0.6-0.2,0.9,0l15.1,11.6L96.3,1.6
+                                  c0.3-0.3,0.8-0.2,1.1,0.1c0.3,0.3,0.2,0.8-0.1,1.1c0,0,0,0,0,0l-15.6,12c-0.3,0.2-0.6,0.2-0.9,0L65.6,3.2L50.5,14.8
+                                  C50.3,14.9,50.2,15,50,15z"
+                />
+              </svg>
+            </div>
+
+            <h1 class="section__heading section__heading--app-ar">
+              <div class="big-font">APP/<br />AR.</div>
+            </h1>
+
+            <div class="big-bold">
+              Almost every person on earth<br />
+              use <span class="secondary-font">app/ar</span> in everyday life.
+            </div>
+            <div class="paragraf-wrapper">
+              <p>
+                Apps have transformed the way consumers handle their mobile
+                phones and, as a result, how companies handle their business.
+                Whether using for communication, shopping or transportation
+                applications, consumers today prefer to solve their problems on
+                their mobile phones. Given these new consumer habits, companies
+                need to reinvent themselves to meet their customers’ needs and
+                be present in the best way possible.
+              </p>
+              <p>
+                Augmented Reality can provide a number of key benefits to brands
+                and organisations. AR increases engagement and interaction and
+                provides a richer user experience. Research has shown that AR
+                increases the perceived value of products and brands.
+              </p>
+            </div>
+
+            <button class="secondary-font btn btn--app-ar">
+              <a href="">Explore more</a>
+            </button>
+          </div>
+          <div class="app-ar__right">
+            <div class="image-container">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <div class="brief">
+            <a href="#">
+              <div class="secondary-font">Want to work with me?</div>
+              <div class="brief__me">BRIEF ME</div>
+              <div class="brief__arrow">
+                <i
+                  ><svg
+                    enable-background="new 0 0 32 32"
+                    version="1.1"
+                    viewBox="0 0 32 32"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M32,16.009c0-0.267-0.11-0.522-0.293-0.714  l-9.899-9.999c-0.391-0.395-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428l8.193,8.275H1c-0.552,0-1,0.452-1,1.01  s0.448,1.01,1,1.01h27.586l-8.192,8.275c-0.391,0.394-0.39,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l9.899-9.999  C31.894,16.534,31.997,16.274,32,16.009z"
+                      fill="#121313"
+                      fill-rule="evenodd"
+                    />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g /></svg
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <ul class="contacts">
+            <li class="contacts__address">3722 Skien</li>
+            <li class="contacts__phone">+47 984 65 405</li>
+            <li class="contacts__mail">milos.josifovic@monumentart.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="borders">
+      <div class="borders__top"></div>
+      <div class="borders__right"></div>
+      <div class="borders__bottom"></div>
+      <div class="borders__left"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/app1.js"></script>
+  </body>
+</html>

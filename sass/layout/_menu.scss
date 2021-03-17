@@ -1,0 +1,229 @@
+.menu-container {
+  position: fixed;
+  background-color: white;
+  left: 55px;
+  transform: translateX(-100%);
+  width: 80%;
+  display: flex;
+  align-items: center; 
+  height: 100%;
+  z-index: 9;
+
+  @include media('<media-lg') {
+    left: 40px;
+  }
+
+  @include media('<media-md') {
+    left: 0px;
+    width: calc(100% - 80px);
+  }
+
+  
+  &__social {
+    display: none;
+    color: $main-text-color;
+    transform: translateY(-20px);
+
+    @include media("<media-md") {
+      display: flex;
+    }
+
+    div:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__left {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    @include media('<media-xxl') {
+      width: 40%;
+    }
+    
+    @include media('<media-lg') {
+      width: 100%;
+    }
+
+    .wrapper {
+      padding-left: 10vw;
+
+      @include media('<media-lg') {
+        padding-left: 16vw;
+      }
+      .nav {
+        font-weight: weight(bold);
+        font-size: 2rem;
+        margin-bottom: 5rem;
+
+        @include media('<media-xxl') {
+          font-size: 1.8rem;
+        }
+        
+        @include media('<media-xl') {
+          font-size: 1.5rem;
+          margin-bottom: 3.8rem;
+        }
+
+        li {
+          margin-bottom: 0.5rem;
+
+          @include media('<media-xl') {
+            margin-bottom: 0.8rem;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+              content: "";
+              position: absolute;
+              background-color: $menuBgColor;
+              width: 100%;
+              height: 100%;
+              bottom: 0;
+              left: 0;
+              z-index: 1;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 40%;
+              top: 50%;
+              transform: translateY(-50%);
+              opacity: 0.5;
+              left: -5%;
+              z-index: -1;
+              transition: all 0.3s ease-out;
+            }
+
+            &:hover::after,
+            &.aktiv::after
+            {
+              width: 110%;
+            }
+          }
+        }
+        &__render::after {
+          background-color: $introColor;
+        }
+        &__print-desing::after {
+          background-color: $printDesignColor;
+        }
+        &__logo-desing::after {
+          background-color: $logoColor;
+        }
+        &__ar-app::after {
+          background-color: $appArColor;
+        }
+        &__about::after {
+          background-color: $aboutColor;
+        }
+      }
+
+      .contacts {
+        opacity: 0;
+        transform: translateY(-20px);
+
+        @include media('<media-md') {
+          display: none;
+        }
+      }
+    }
+
+    .brief {
+      position: absolute;
+      left: 10vw;
+      bottom: 80px;
+      opacity: 0;
+      transform: translateY(-20px);
+
+      @include media('<media-lg') {
+        left: 16vw;
+      }
+    }
+  }
+
+  &__right {
+    width: 50%;
+    position: relative;
+    height: 100%;
+
+    @include media('<media-xl') {
+      height: 80%;
+    }
+    
+    @include media('<media-lg') {
+      display: none;
+    }
+  }
+
+  .bulb {
+    width: 210px;
+    position: absolute;
+    transition: all 0.2s ease;
+
+    @include media('<2000px') {
+      width: 180px;
+    }
+
+    @include media('<media-xxl') {
+      width: 150px;
+    }
+
+    @include media('<media-xl') {
+      width: 120px;
+    }
+
+    path {
+      cursor: pointer;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &.one {
+      left: 10%;
+      top: 10%;
+      path {
+        fill: $introColor;
+      }
+    }
+    &.two {
+      left: 38%;
+      top: 32%;
+      path {
+        fill: $printDesignColor;
+      }
+    }
+    &.three {
+      left: 68%;
+      top: 15%;
+      path {
+        fill: $logoColor;
+      }
+    }
+    &.four {
+      left: 15%;
+      bottom: 15%;
+      path {
+        fill: $appArColor;
+      }
+    }
+    &.five {
+      left: 60%;
+      bottom: 15%;
+      path {
+        fill: $aboutColor;
+      }
+    }
+  }
+}

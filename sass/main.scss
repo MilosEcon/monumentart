@@ -1,0 +1,35 @@
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/animation";
+
+@import "breakPoints/break-points";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/main";
+@import "layout/section";
+@import "layout/header";
+@import "layout/menu";
+@import "layout/borders";
+@import "layout/loader";
+@import "layout/intro";
+@import "layout/building-img";
+@import "layout/body";
+@import "layout/rendering-3d";
+@import "layout/print-design";
+@import "layout/logo";
+@import "layout/app-ar";
+@import "layout/footer";
+
+@import "components/buttons";
+@import "components/wave-container";
+@import "components/image-container";
+@import "components/contacts";
+@import "components/brief";
+@import "components/scroll-sign";
+
+
+.full-opacity {
+  opacity: 1 !important;
+}

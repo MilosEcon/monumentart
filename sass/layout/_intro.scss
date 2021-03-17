@@ -1,0 +1,320 @@
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: $introColor;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+
+  @include media("<media-s") {
+    align-items: flex-end;
+    height: 120vh;
+  }
+
+  &__logo {
+    position: absolute;
+    display: none;
+    left: 20px;
+    top: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    z-index: 1;
+
+    @include media("<media-md") {
+      display: block;
+    }
+  }
+
+  &__padding {
+    padding: 10vh 20vw;
+
+    @include media("<media-s") {
+      padding: 10vh 0;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .wrapper {
+      margin-bottom: 40px;
+
+      @include media("<media-xxl") {
+        margin-bottom: 30px;
+      }
+
+      @include media("<media-md") {
+        width: 500px;
+        font-size: 1rem;
+      }
+      @include media("<media-s") {
+        width: 300px;
+        font-size: 0.8rem;
+      }
+      .wave {
+        position: relative;
+
+        svg {
+          width: 50px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          background-color: $introColor;
+        }
+      }
+
+      .since {
+        margin-left: 10px;
+        opacity: 0;
+
+        @include media("<media-lg") {
+          font-size: 0.8rem;
+        }
+
+        @include media("<media-md") {
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .mission-text {
+      width: 800px;
+      font-size: 1.8rem;
+      font-weight: weight(bold);
+
+      @include media("<media-xxl") {
+        font-size: 1.5rem;
+      }
+
+      @include media("<media-xl") {
+        font-size: 1.3rem;
+      }
+      @include media("<media-lg") {
+        width: 800px;
+        font-size: 1.1rem;
+      }
+
+      @include media("<media-md") {
+        width: 400px;
+        font-size: 1rem;
+      }
+      @include media("<media-s") {
+        width: 300px;
+        font-size: 1rem;
+      }
+
+      > div {
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        &:first-child {
+          color: $intro-text-color;
+        }
+
+        > div {
+          position: relative;
+          transform: translateY(50px);
+          opacity: 0;
+        }
+      }
+
+      &:first-child {
+        color: $main-text-color;
+      }
+    }
+  }
+
+  // hello letters
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &__letters {
+    position: absolute;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+    @include media("<media-xxl") {
+      width: 400px;
+    }
+
+    @include media("<media-xl") {
+      width: 350px;
+    }
+    @include media("<media-lg") {
+      width: 300px;
+    }
+
+    @include media("<media-md") {
+      width: 250px;
+    }
+    @include media("<media-s") {
+      width: 200px;
+    }
+  }
+
+  .hello-first,
+  .hello-second {
+    height: 170px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    @include media("<media-xxl") {
+      height: 151px;
+    }
+
+    @include media("<media-xl") {
+      height: 133px;
+    }
+    @include media("<media-lg") {
+      height: 114px;
+    }
+
+    @include media("<media-md") {
+      height: 95px;
+    }
+    @include media("<media-s") {
+      height: 75px;
+    }
+    div div {
+      position: absolute;
+      background-color: $main-text-color;
+    }
+  }
+  ////jdfasjfhasfhhfd
+  .hello-first__h div:first-child,
+  .hello-first__h div:last-child,
+  .hello-first__e div:first-child,
+  .hello-second__l div:first-child {
+    height: 100%;
+    width: 10%;
+  }
+
+  .hello-first__h div:first-child,
+  .hello-second__l div:first-child {
+    top: 0;
+    left: 0;
+    height: 0;
+  }
+
+  .hello-first__h div:nth-child(2),
+  .hello-first__e div:nth-child(2),
+  .hello-first__e div:nth-child(3),
+  .hello-first__e div:last-child,
+  .hello-second__l div:last-child {
+    height: 25%;
+    width: 23%;
+  }
+
+  .hello-first__h div:nth-child(2) {
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    width: 0;
+  }
+
+  .hello-first__h div:last-child {
+    top: 0;
+    left: 22%;
+    width: 0;
+  }
+
+  .hello-first__e div:first-child {
+    bottom: 0;
+    left: 37%;
+    height: 0;
+  }
+
+  .hello-first__e div:nth-child(2) {
+    top: 0;
+    left: 42%;
+    width: 0;
+  }
+
+  .hello-first__e div:nth-child(3) {
+    top: 37%;
+    left: 40%;
+    height: 0;
+  }
+
+  .hello-first__e div:last-child {
+    bottom: 0;
+    left: 42%;
+    width: 0;
+  }
+
+  .hello-second__l div:last-child {
+    bottom: 0;
+    left: 0;
+    width: 0;
+  }
+
+  .hello-second__l.two div:first-child {
+    left: 26%;
+    height: 100%;
+    width: 0;
+  }
+
+  .hello-second__l.two div:last-child {
+    left: 26%;
+  }
+
+  .hello-second__o {
+    position: absolute;
+    height: 100%;
+    width: 38%;
+    top: 0;
+    left: 50%;
+  }
+
+  .hello-second__o circle {
+    fill: none;
+    stroke: $main-text-color;
+    stroke-width: 23%;
+  }
+
+  .hello-second__dot {
+    position: absolute;
+    fill: $introColor;
+    left: 88%;
+    bottom: 0;
+    height: 34%;
+    width: 13%;
+  }
+
+  .hello-second__dot circle {
+    transform: scale(0);
+  }
+
+  &__page-color {
+    position: absolute;
+    height: 100%;
+    background-color: $mainBgColor;
+    right: 0;
+    top: 0;
+  }
+}
