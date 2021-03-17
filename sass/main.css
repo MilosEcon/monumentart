@@ -1173,7 +1173,7 @@ main {
 
 .building-img .image-container div {
   background-position: 50% -50%;
-  background-image: url("../images/");
+  background-image: url("../images/building1.jpg");
 }
 
 body {
@@ -1265,7 +1265,7 @@ body.menu-closed .header__hamburger--big:hover .header__letters span:nth-child(e
 
 .print-design .image-container div {
   background-position: 50% 0%;
-  background-image: url("../../images/print.jpg");
+  background-image: url("../images/print.jpg");
 }
 
 .logo {
@@ -1346,7 +1346,7 @@ body.menu-closed .header__hamburger--big:hover .header__letters span:nth-child(e
 
 .logo .image-container div {
   background-position: 50% 40%;
-  background-image: url("../../images/logo.jpg");
+  background-image: url("../images/logo.jpg");
 }
 
 .app-ar .container {
@@ -1458,7 +1458,7 @@ body.menu-closed .header__hamburger--big:hover .header__letters span:nth-child(e
 
 .app-ar__right .image-container div {
   background-position: 50% 0%;
-  background-image: url("../../images/app-ar.jpg");
+  background-image: url("../images/app-ar.jpg");
 }
 
 .app-ar__right .image-container div::before {
